@@ -1,16 +1,15 @@
-*{
-margin : auto;
-padding:0;
-box-sizing: box-border;
-overflow-x: hidden;
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box; 
+  overflow-x: hidden;
+  cursor: pointer;
 }
- 
 
 
 .header{
     width: 100%;
     height: 80vh;
-    z-index: -1;
     object-fit: cover;
     background-color: rgb(30, 15, 7);
     cursor: pointer;
@@ -30,15 +29,6 @@ overflow-x: hidden;
 }
 
 
-@keyframes main {
-    from {
-        transform: translatey(0px);
-    }
-    to {
-        transform: translateX(5px);
-    }
-    
-}
 .container{
      background-color: rgb(24, 17, 17);
      width: 100%;
@@ -48,7 +38,6 @@ overflow-x: hidden;
     background-color: rgb(24, 17, 17);
     display: flex;
    margin-left: 20%;
-
     justify-content: space-around;
     align-items: center;
    color: white;
@@ -72,11 +61,10 @@ overflow-x: hidden;
     text-decoration: none;
     font-size: large;
    width: 100%;
-  
     
 }
 .nav-items li a:hover{
-    color: rgba(118, 66, 44, 0.44);
+    color: rgba(244, 242, 241, 0.44);
 }
 .main{
 
@@ -423,15 +411,20 @@ cursor: pointer;
     .main h3 {
         font-size: 15px;
         min-width: 100%;
+        margin: 10px;
         
+    }
+    .main span{
+        margin: 10px;
+        font-size: 12px;
     }
     
     .main h1 {
-        font-size:25px;
+        font-size:24px;
     }
      .main button{
       
-     padding: 10px;
+     padding: 8px;
      margin: 1px;
      margin-left: -10%;
      font-size: 12px;
@@ -454,7 +447,7 @@ cursor: pointer;
     transition: all 0.3s ease;
 }
 .hamburger.active .bar:nth-child(1) {
-    transform: rotate(45deg) translate(7px, 7px);
+    transform: rotate(45deg) translate(8px, 4px);
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -462,12 +455,12 @@ cursor: pointer;
 }
 
 .hamburger.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
+    transform: rotate(-45deg) translate(8px, -4px);
 }
   
     .nav-items  {
         position: absolute;
-        top: 60px;
+        top: 50px;
         left: -100%;
         width: 100%;
         height: calc(100vh - 80px);
@@ -490,6 +483,7 @@ cursor: pointer;
         width: 100%;
         text-align: center;
         margin-bottom: 10px;
+       
     }
     
     .nav-items  li a {
@@ -498,6 +492,8 @@ cursor: pointer;
         padding: 15px;
         font-size: 18px;
         text-align: center;
+        
+   
     }
     .about{
     display: contents;
@@ -533,6 +529,9 @@ cursor: pointer;
 }
 .sec-desc h1{
     font-size: 16px;
+}
+.sec-desc h3{
+    margin-left: 10px;
 }
 .video1 {
     height: 70vh;
