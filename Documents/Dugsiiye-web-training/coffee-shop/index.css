@@ -127,21 +127,8 @@
     height: auto;
     position: absolute;
     left: 60%;
-    animation: co2 10s infinite alternate;
     border-radius: 40%;
 }
-
-@keyframes co2 {
-    from {
-        transform: translateX(0deg);
-    }
-    to {
-        transform: translateX(100deg);
-    }
-}
-
-
-
 
 .hamburger{
     display: none;
